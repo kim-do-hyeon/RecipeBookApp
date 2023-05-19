@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/some_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/welcome_to"
+        android:layout_width="132dp"
+        android:layout_height="27dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/recipe_book"
+        android:text="@string/welcome_to"
+        android:textAppearance="@style/welcome_to"
+        android:lineSpacingExtra="9sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:lineHeight="31sp"
+        />
+    <!-- Font family: Apercu Pro Line height: 31sp -->
+
+    <!-- Recipe Book -->
+    <TextView
+        android:id="@+id/recipe_book"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal|bottom"
+        android:text="@string/recipe_book"
+        android:textAppearance="@style/recipe_book"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:lineHeight="45sp"/>
+    <!-- Font family: Apercu Pro Line height: 45sp -->
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <!-- ID -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/id"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:hint="ID"
+        android:inputType="text"
+        android:paddingLeft="19dp"
+        android:textColorHint="#FFFFFF" />
+
+    <!--PASSWORD-->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/id"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="19dp"
+        android:textColorHint="#FFFFFF" />
+
+    <!--login-->
+    <android.widget.Button
+        android:id="@+id/button_login"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_login"
+        android:hint="Login"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:textColorHint="#34A853" />
+
+    <!--create-->
+    <android.widget.Button
+        android:id="@+id/button_register"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_create"
+        android:hint="Create an account"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:textColorHint="#fff" />
+
+
+</LinearLayout>

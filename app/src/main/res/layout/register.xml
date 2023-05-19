@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <!-- ID -->
+    <EditText
+        android:id="@+id/register_id"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/id"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:hint="가입할 아이디를 입력해 주세요"
+        android:inputType="text"
+        android:paddingLeft="19dp"
+        android:textColorHint="#FFFFFF" />
+
+    <!--PASSWORD-->
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/id"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:hint="비밀번호를 입력해주세요"
+        android:inputType="textPassword"
+        android:paddingLeft="19dp"
+        android:textColorHint="#FFFFFF" />
+
+    <!--login-->
+
+    <!--create-->
+    <android.widget.Button
+        android:id="@+id/register_submit"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_create"
+        android:hint="회원가입하기"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:textColorHint="#fff" />
+    <android.widget.Button
+        android:id="@+id/register_cancel"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_create"
+        android:hint="돌아가기"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:textColorHint="#fff" />
+
+
+</LinearLayout>
