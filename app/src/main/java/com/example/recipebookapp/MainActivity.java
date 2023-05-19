@@ -1,6 +1,7 @@
 package com.example.recipebookapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -56,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 // 로그인 버튼 클릭
                 login_button.setOnClickListener(v -> {
                     // 버튼 클릭 시 수행할 동작
-                    setContentView(R.layout.activity_main2);
+                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    startActivity(intent);
                 });
                 // 회원가입 버튼 클릭
                 register_button.setOnClickListener(v -> {
