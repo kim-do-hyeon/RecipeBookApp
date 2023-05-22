@@ -4,15 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
-    android:background="#eee">
+    android:background="#eee"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/editTextUsername3"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/search"
+        android:fontFamily="@font/apercu_bold_pro"
+        android:gravity="center|left"
+        android:hint="음식의 이름을 검색하시오."
+        android:inputType="text"
+        android:paddingLeft="19dp"
+        android:textColorHint="#000"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/filter_Button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/button1"
+        android:contentDescription="Filter Button"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextUsername3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,DuplicateClickableBoundsCheck" />
+
+    <ImageButton
+        android:id="@+id/information_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/information"
+        android:contentDescription="Filter Button"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUsername3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list_item"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="146dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

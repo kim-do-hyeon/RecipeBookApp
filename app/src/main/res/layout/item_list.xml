@@ -63,6 +63,7 @@
                 android:layout_marginTop="20dp"
                 android:text="title"
                 android:textColor="@color/RED"
+                android:fontFamily="@font/apercu_bold_pro"
                 app:layout_constraintStart_toEndOf="@+id/item_bar"
                 app:layout_constraintTop_toTopOf="parent" />
 
