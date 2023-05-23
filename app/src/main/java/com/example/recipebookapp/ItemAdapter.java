@@ -1,7 +1,7 @@
 package com.example.recipebookapp;
 
-
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +37,18 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         holder.itemTitle.setText(itemModel.getFood_title());
         holder.itemTime.setText(itemModel.getFood_time());
         holder.itemRatingBar.setRating(itemModel.getRating());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, RecipeActivity.class);
+                intent.putExtra("itemTitle", itemModel.getFood_title());
+                intent.putExtra("itemTime", itemModel.getFood_time());
+                intent.putExtra("itemImage", itemModel.getImage());
+                intent.putExtra("itemRating", itemModel.getRating());
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
