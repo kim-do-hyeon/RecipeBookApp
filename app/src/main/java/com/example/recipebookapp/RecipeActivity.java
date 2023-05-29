@@ -22,10 +22,26 @@ public class RecipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipe);
 
         modalContainer = findViewById(R.id.modal_container);
+        foodTitle = findViewById(R.id.food_title);
+        recipeTime = findViewById(R.id.recipe_time_text);
+        recipeImageView = findViewById(R.id.recipe_food_img);
+
 
         // 모달 뷰 추가
         View modalView = createModalView();
         addModalView(modalView);
+
+        // 인텐트에서 데이터 가져오기
+        Intent intent = getIntent();
+        String itemTitle = intent.getStringExtra("itemTitle");
+        String itemTime = intent.getStringExtra("itemTime");
+        int itemImage = intent.getIntExtra("itemImage",0);
+
+
+        // 데이터 적용
+        foodTitle.setText(itemTitle);
+        recipeTime.setText(itemTime);
+        recipeImageView.setImageResource(itemImage); // 이미지 설정
 
         ImageView backIcon = findViewById(R.id.backicon);
         backIcon.setOnClickListener(new View.OnClickListener() {
