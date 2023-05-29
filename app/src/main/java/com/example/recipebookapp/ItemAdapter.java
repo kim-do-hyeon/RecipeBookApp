@@ -46,6 +46,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
                 intent.putExtra("itemTime", itemModel.getFood_time());
                 intent.putExtra("itemImage", itemModel.getImage());
                 intent.putExtra("itemRating", itemModel.getRating());
+                intent.putExtra("itemServings", itemModel.getServings());
+                intent.putExtra("itemKcal", itemModel.getKcal());
                 context.startActivity(intent);
             }
         });

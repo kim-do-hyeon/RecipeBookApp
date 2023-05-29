@@ -99,18 +99,18 @@
         app:layout_constraintTop_toBottomOf="@+id/Recipe_time" />
 
     <TextView
-        android:id="@+id/recipe_servings_text"
+        android:id="@+id/recipe_kcal_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="4dp"
         android:text="50Kcal"
         android:textColor="#fff"
-        app:layout_constraintStart_toEndOf="@+id/recipe_kcal_text"
+        app:layout_constraintStart_toEndOf="@+id/recipe_servings_text"
         app:layout_constraintTop_toBottomOf="@+id/recipe_kcal" />
 
     <TextView
-        android:id="@+id/recipe_kcal_text"
+        android:id="@+id/recipe_servings_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="73dp"

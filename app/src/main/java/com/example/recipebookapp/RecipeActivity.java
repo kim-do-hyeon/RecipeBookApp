@@ -18,6 +18,8 @@ public class RecipeActivity extends AppCompatActivity {
     private FrameLayout modalContainer;
     private TextView foodTitle;
     private TextView recipeTime;
+    private TextView recipeKcal;
+    private TextView recipeServings;
 
     private ImageView recipeImageView;
 
@@ -30,6 +32,8 @@ public class RecipeActivity extends AppCompatActivity {
         modalContainer = findViewById(R.id.modal_container);
         foodTitle = findViewById(R.id.food_title);
         recipeTime = findViewById(R.id.recipe_time_text);
+        recipeKcal = findViewById(R.id.recipe_kcal_text);
+        recipeServings = findViewById(R.id.recipe_servings_text);
         recipeImageView = findViewById(R.id.recipe_food_img);
 
 
@@ -42,12 +46,16 @@ public class RecipeActivity extends AppCompatActivity {
         String itemTitle = intent.getStringExtra("itemTitle");
         String itemTime = intent.getStringExtra("itemTime");
         int itemImage = intent.getIntExtra("itemImage",0);
+        int itemKcal = intent.getIntExtra("itemKcal", 0);
+        int itemServings = intent.getIntExtra("itemServings", 0);
 
 
         // 데이터 적용
         foodTitle.setText(itemTitle);
         recipeTime.setText(itemTime);
         recipeImageView.setImageResource(itemImage); // 이미지 설정
+        recipeKcal.setText(String.valueOf(itemKcal) + " Kcal");
+        recipeServings.setText(String.valueOf(itemServings + " 인분"));
 
         ImageView backIcon = findViewById(R.id.backicon);
         backIcon.setOnClickListener(new View.OnClickListener() {
