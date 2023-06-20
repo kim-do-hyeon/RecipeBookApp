@@ -20,6 +20,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity2 extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ItemAdapter itemAdapter;
@@ -28,6 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
     private AppCompatImageButton filterButton;
 
     private Dialog filterDialog;
+    private DatabaseReference mDatabase; // Add this line
 
     @SuppressLint({"ClickableViewAccessibility", "WrongViewCast"})
     @Override
@@ -35,8 +39,11 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        mDatabase = FirebaseDatabase.getInstance().getReference(); // Add this line
+
         recyclerView = findViewById(R.id.list_item);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
 
         itemModels = new ArrayList<>();
         // 아이템 데이터를 생성하여 itemModels에 추가합니다.

@@ -1,149 +1,132 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_background">
 
-    <ScrollView
-        android:id="@+id/scroll_view"
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="요리 이름"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/IngredientsTitleTextView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:text="재료"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
 
         <LinearLayout
-            android:id="@+id/text_box"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_background"
-            android:orientation="vertical"
-            android:paddingHorizontal="20dp">
-
-            <View
-                android:id="@+id/move_controller"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="#CCCCCC" />
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/Recipe_Ingredients_title"
-                android:layout_width="match_parent"
+                android:id="@+id/Ingredient1TextView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="20dp"
-                android:text="재료"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+                android:text="- 재료 1"
+                android:textSize="14sp"
+                android:layout_weight="1" />
 
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/Ingredient1QuantityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1개"
+                android:textSize="14sp"
+                android:gravity="end" />
 
-                <!-- 재료 텍스트뷰와 수량 텍스트뷰 추가 -->
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/Recip_Ingredients_1"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="＊ 김치"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/Material_quantity1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:text="1/2공기"
-                        android:textSize="14sp" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/Recip_Ingredients_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="＊ 밥"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/Material_quantity2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:text="1 공기"
-                        android:textSize="14sp" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/Recip_Ingredients_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="＊ 대파"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/Material_quantity3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:text="1대"
-                        android:textSize="14sp" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/Recip_Ingredients_4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="＊ 계란"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/Material_quantity4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:text="1개"
-                        android:textSize="14sp" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/Recip_Ingredients_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="＊ 기름"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/Material_quantity5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:text="2T"
-                        android:textSize="14sp" />
-                </TableRow>
-
-                <!-- 재료 행 추가 -->
-
-            </TableLayout>
+            <Button
+                android:id="@+id/PurchaseButton1"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="구매"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="20dp" />
 
         </LinearLayout>
-    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Ingredient2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 재료 2"
+                android:textSize="14sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/Ingredient2QuantityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2개"
+                android:textSize="14sp"
+                android:gravity="end" />
+
+            <Button
+                android:id="@+id/PurchaseButton2"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="구매"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <!-- 추가 재료와 버튼을 위한 LinearLayout 추가 -->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/RecipeTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="레시피"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/RecipeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- 레시피 단계 1"
+        android:textSize="14sp"
+        android:paddingLeft="16dp" />
+
+    <TextView
+        android:id="@+id/RecipeTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- 레시피 단계 2"
+        android:textSize="14sp"
+        android:paddingLeft="16dp" />
+
+    <!-- 추가 레시피 TextView 추가 -->
 
 </LinearLayout>
