@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FE4545"
-    tools:context=".activity_recipe">
+    tools:context=".RecipeActivity">
 
     <ImageView
         android:id="@+id/backicon"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/apercu_bold_pro"
-        android:text="김치 볶음밥"
+        android:text="음식이름"
         android:textColor="#fff"
         app:layout_constraintLeft_toRightOf="@id/backicon"
         app:layout_constraintRight_toLeftOf="@id/book_mark"
@@ -59,20 +59,20 @@
 
     <ImageView
         android:id="@+id/Recipe_time"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        app:srcCompat="@drawable/time_w"
-        android:layout_width="wrap_content" />
+        app:srcCompat="@drawable/time_w" />
 
     <ImageView
         android:id="@+id/recipe_servings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toEndOf="@+id/Recipe_time"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
         app:srcCompat="@drawable/servings" />
@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toEndOf="@+id/recipe_servings"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
         app:srcCompat="@drawable/kcal" />
@@ -128,5 +128,17 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
     </FrameLayout>
+
+    <Button
+        android:id="@+id/modal_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="레시피 보기"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#007AFF"
+        app:layout_constraintBottom_toTopOf="@+id/modal_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

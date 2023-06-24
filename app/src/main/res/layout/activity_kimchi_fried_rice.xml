@@ -1,0 +1,405 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="김치 볶음밥"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/IngredientsTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="재료"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Ingredient1TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="- 김치"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Ingredient1QuantityTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="1그릇"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/PurchaseButton1"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="구매"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Ingredient2TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="- 베이컨"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Ingredient2QuantityTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="3장"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/PurchaseButton2"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="구매"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Ingredient3TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="- 대파"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Ingredient3QuantityTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="1개"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/PurchaseButton3"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="구매"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Ingredient4TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="- 달걀"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Ingredient4QuantityTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="2개"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/PurchaseButton4"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="구매"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Ingredient5TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="- 식용유"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Ingredient5QuantityTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="약간"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/PurchaseButton5"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="구매"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Ingredient6TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="- 간장"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Ingredient6QuantityTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="1스푼"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/PurchaseButton6"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="구매"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/RecipeTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="레시피"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:paddingTop="30dp"
+                        android:id="@+id/RecipeTextView0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="16dp"
+                        android:text="① 재료를 준비해주세요"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="20dp"
+                        app:srcCompat="@drawable/kimchi0" />
+
+                    <TextView
+                        android:id="@+id/RecipeTextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="16dp"
+                        android:text="② 팬에 올리브유를 넉넉하게 부은 다음 대파를 볶아 주세요"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="20dp"
+                        app:srcCompat="@drawable/kimchi1" />
+
+                    <TextView
+                        android:id="@+id/RecipeTextView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="16dp"
+                        android:text="③ 대파향이 올라오면 베이컨을 넣어주세요"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="20dp"
+                        app:srcCompat="@drawable/kimchi2" />
+
+                    <TextView
+                        android:id="@+id/RecipeTextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="16dp"
+                        android:text="④ 간장 1스푼을 넣어주세요"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="20dp"
+                        app:srcCompat="@drawable/kimchi3" />
+
+                    <TextView
+                        android:id="@+id/RecipeTextView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="16dp"
+                        android:text="⑤ 대파 ▶ 베이컨 ▶ 간장 순으로 넣어서 볶아주시는데요 베이컨이 타기 전까지 볶아주세요"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="20dp"
+                        app:srcCompat="@drawable/kimchi4" />
+
+                    <TextView
+                        android:id="@+id/RecipeTextView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="16dp"
+                        android:text="⑥ 김치를 넣고 볶아주세요 혹시나 기름 부족하다 싶으면 조금 더 넣어주세요"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="20dp"
+                        app:srcCompat="@drawable/kimchi5" />
+
+                    <TextView
+                        android:id="@+id/RecipeTextView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="16dp"
+                        android:text="⑦ 밥까지 넣어서 달달 볶아주면 완성"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="20dp"
+                        app:srcCompat="@drawable/kimchi6" />
+
+                    <TextView
+                        android:id="@+id/RecipeTextView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="16dp"
+                        android:text="⑧ 취향에 맞게 계란후라이를 올려주세요"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="20dp"
+                        app:srcCompat="@drawable/kimchi7" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
